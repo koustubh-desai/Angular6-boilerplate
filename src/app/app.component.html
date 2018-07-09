@@ -1,0 +1,44 @@
+<div>
+  <mat-toolbar color="primary">
+    <span><mat-icon>mood</mat-icon></span>
+
+    <span>Yay, Material in Angular 2!</span>
+
+    <button mat-icon-button [mat-menu-trigger-for]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-menu x-position="before" #menu="matMenu">
+    <button mat-menu-item>Option 1</button>
+    <button mat-menu-item>Option 2</button>
+  </mat-menu>
+
+  <mat-card>
+    <button mat-button>All</button>
+    <button mat-raised-button>Of</button>
+    <button mat-raised-button color="primary">The</button>
+    <button mat-raised-button color="accent">Buttons</button>
+  </mat-card>
+
+  <span class="done">
+    <button mat-fab>
+      <mat-icon>check circle</mat-icon>
+    </button>
+  </span>
+</div>
+<h2>Here are some links to help you start: </h2>
+
+<router-outlet></router-outlet>
+<app-messages></app-messages>
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul>
+
